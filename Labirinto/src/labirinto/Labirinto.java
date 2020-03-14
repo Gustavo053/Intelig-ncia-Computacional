@@ -37,11 +37,13 @@ public class Labirinto {
         }
     }
     
-    private void buscaEmLargura(Pair<Integer, Integer> ini, Pair<Integer, Integer> end){
+    private void buscaEmLargura(Pair<Integer, Integer> ini,  Pair<Integer, Integer> end){
         LinkedList fila = new LinkedList();
-        Pair<Integer, Integer> current;
+        Pair<Integer, Integer> atual;
         fila.add(ini);
-        //Continuação
+        while(!fila.isEmpty()){
+            fila.poll();
+        }
     }
     
     public static void main(String[] args) {
